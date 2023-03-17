@@ -194,22 +194,20 @@ body {
     height: 100vh;
 }
 
-.shop .dress-produk {
+.dress-produk {
     color: #fff;
     font-size: 85px;
     font-family: cinzel-reguler;
     font-weight: 400;
-    margin: 20px;
-    margin-top: 650px;
 }
 
-.shop .dress .container-dress {
+.dress .container-dress {
     width: fit-content;
     height: fit-content;
     margin: 82px 15px;
 }
 
-.shop .btn-dress {
+.btn-dress {
     display: flex;
     height: 60px;
     justify-content: center;
@@ -225,13 +223,12 @@ body {
     margin-top: 35px;
 }
 
-.shop .hijab-produk {
+ .hijab-produk {
     color: #fff;
     font-size: 85px;
     font-family: cinzel-reguler;
     font-weight: 400;
     margin: 20px;
-    margin-top: 650px;
 }
 
 .shop .hijab .container-hijab {
@@ -240,7 +237,7 @@ body {
     margin: 82px 15px;
 }
 
-.shop .btn-hijab {
+.btn-hijab {
     display: flex;
     height: 60px;
     justify-content: center;
@@ -318,7 +315,6 @@ body {
     .dress {
         display: flex;
         justify-content: center;
-        align-items: flex-start;
         background-image: url(../images/Hijab.png);
         background-size: cover;
         width: auto;
@@ -328,19 +324,19 @@ body {
     .hijab {
         display: flex;
         justify-content: center;
-        align-items: flex-end;
         background-image: url(../images/Dress.png);
         background-size: cover;
         width: auto;
         height: 100vh;
     }
 
-    .shop .dress-produk {
+    .dress-produk {
         font-size: 3.5rem;
-        background-color: red;
+        display: flex;
+        justify-content: center;
     }
 
-    .shop .btn-dress {
+    .btn-dress {
         display: flex;
         height: 60px;
         justify-content: center;
@@ -354,11 +350,13 @@ body {
         font-size: 26px;
     }
 
-    .shop .hijab-produk {
+    .hijab-produk {
         font-size: 3.5rem;
+        display: flex;
+        justify-content: center;
     }
 
-    .shop .btn-hijab {
+    .btn-hijab {
         display: flex;
         height: 60px;
         justify-content: center;
@@ -370,7 +368,6 @@ body {
         border: 2px solid #fff;
         border-radius: 25px;
         font-size: 26px;
-        margin-bottom: 65px;
     }
 
     .shop a:hover {
@@ -422,7 +419,6 @@ body {
     .dress {
         display: flex;
         justify-content: center;
-        align-items: center;
         background-image: url(../images/Hijab.png);
         background-size: cover;
         width: auto;
@@ -432,19 +428,20 @@ body {
     .hijab {
         display: flex;
         justify-content: center;
-        align-items: center;
         background-image: url(../images/Dress.png);
         background-size: cover;
         width: auto;
         height: 100vh;
     }
 
-    .shop .dress-produk {
+    .dress-produk {
         font-size: 3.5rem;
-        margin-bottom: 150px;
+        display: flex;
+        justify-content: center;
     }
 
-    .shop .btn-dress {
+
+    .btn-dress {
         display: flex;
         height: 60px;
         justify-content: center;
@@ -456,15 +453,15 @@ body {
         border: 2px solid #fff;
         border-radius: 25px;
         font-size: 26px;
-        top: 1500px;
     }
 
-    .shop .hijab-produk {
+    .hijab-produk {
+        display: flex;
+        justify-content: center;
         font-size: 3.5rem;
-        margin-bottom: 150px;
     }
 
-    .shop .btn-hijab {
+    .btn-hijab {
         display: flex;
         height: 60px;
         justify-content: center;
@@ -476,7 +473,6 @@ body {
         border: 2px solid #fff;
         border-radius: 25px;
         font-size: 26px;
-        margin-top: 710px;
     }
 
     .shop a:hover {
@@ -545,24 +541,28 @@ body {
     .dress {
         background-image: url(../images/Hijab.png);
         background-size: cover;
+        display: flex;
+        justify-content: center;
         width: auto;
         height: 100vh;
     }
 
     .hijab {
         background-image: url(../images/Dress.png);
+        display: flex;
+        justify-content: center;
         background-size: cover;
         width: auto;
         height: 100vh;
     }
 
-    .shop .dress-produk {
+    .dress-produk {
         color: #fff;
         font-size: 85px;
         font-family: cinzel-reguler;
         font-weight: 400;
-        margin: 20px;
-        margin-top: 600px;
+        display: flex;
+        justify-content: center;
     }
 
 
@@ -582,13 +582,13 @@ body {
 
     }
 
-    .shop .hijab-produk {
+    .hijab-produk {
         color: #fff;
         font-size: 85px;
         font-family: cinzel-reguler;
         font-weight: 400;
-        margin: 20px;
-        margin-top: 600px;
+        display: flex;
+        justify-content: center;
     }
 
     .shop .btn-hijab {
