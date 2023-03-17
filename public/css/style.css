@@ -80,7 +80,7 @@ body {
 .navbar-item {
     /* padding: 0 20px; */
     display: flex;
-    height:100%;
+    height: 100%;
     align-items: center;
     border-bottom: 2px solid transparent;
 }
@@ -101,11 +101,11 @@ body {
     /* box-sizing: border-box; */
 }
 
-.header-right{
+.header-right {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap:20px;
+    gap: 20px;
 }
 
 .navbar-icons {
@@ -118,12 +118,12 @@ body {
     text-decoration: none;
 }
 
-.header-right .toggle{
+.header-right .toggle {
     cursor: pointer;
-    display:none;
+    display: none;
 }
 
-.header-right .toggle div{
+.header-right .toggle div {
     width: 25px;
     height: 4px;
     background: black;
@@ -131,7 +131,7 @@ body {
     border-radius: 5px;
 }
 
-.hero{
+.hero {
     width: 100vw;
     height: 80vh;
     background-size: cover;
@@ -140,9 +140,10 @@ body {
     justify-content: center;
     align-items: end;
     background-image: url(../images/main1.jpg);
-    
+
 }
-.text-hero{
+
+.text-hero {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -150,7 +151,7 @@ body {
     margin-bottom: 40px;
 }
 
-.name{
+.name {
     top: 700px;
     font-family: cinzel-reguler;
     font-weight: 400;
@@ -158,7 +159,7 @@ body {
     font-size: 3em;
 }
 
-.moto{
+.moto {
     top: 800px;
     font-family: cinzel-bold;
     font-weight: bold;
@@ -166,28 +167,34 @@ body {
     font-size: 5em;
 }
 
-.shop{
+.shop {
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
     padding: 20px;
 }
 
-.dress{
+.dress {
     background-image: url(../images/Hijab.png);
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
-.hijab{
+.hijab {
     background-image: url(../images/Dress.png);
     background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
     width: 100vw;
     height: 100vh;
 }
 
-.shop .dress-produk{
+.shop .dress-produk {
     color: #fff;
     font-size: 85px;
     font-family: cinzel-reguler;
@@ -196,7 +203,13 @@ body {
     margin-top: 650px;
 }
 
-.shop .btn-dress{
+.shop .dress .container-dress {
+    width: fit-content;
+    height: fit-content;
+    margin: 82px 15px;
+}
+
+.shop .btn-dress {
     display: flex;
     height: 60px;
     justify-content: center;
@@ -205,7 +218,6 @@ body {
     text-decoration: none;
     font-family: redhat-reguler;
     color: #fff;
-    position: absolute;
     border: 2px solid #fff;
     margin: 20px;
     border-radius: 25px;
@@ -213,7 +225,7 @@ body {
     margin-top: 35px;
 }
 
-.shop .hijab-produk{
+.shop .hijab-produk {
     color: #fff;
     font-size: 85px;
     font-family: cinzel-reguler;
@@ -222,7 +234,13 @@ body {
     margin-top: 650px;
 }
 
-.shop .btn-hijab{
+.shop .hijab .container-hijab {
+    width: fit-content;
+    height: fit-content;
+    margin: 82px 15px;
+}
+
+.shop .btn-hijab {
     display: flex;
     height: 60px;
     justify-content: center;
@@ -231,7 +249,6 @@ body {
     text-decoration: none;
     font-family: redhat-reguler;
     color: #fff;
-    position: absolute;
     border: 2px solid #fff;
     margin: 20px;
     border-radius: 25px;
@@ -240,18 +257,18 @@ body {
 
 }
 
-.shop a:hover{
+.shop a:hover {
     color: #000000;
     background-color: #fff;
     transition: 0.5s;
 }
 
-.article{
+.article {
     background-color: #E6B0AA;
-    height: 100vh;  
+    height: 100vh;
 }
 
-.text-article{
+.text-article {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,12 +276,12 @@ body {
     padding: 60px;
 }
 
-.article h3{
+.article h3 {
     font-size: 55px;
     color: #fff;
 }
 
-.article a{
+.article a {
     text-decoration: none;
     color: #fff;
     margin-top: 30px;
@@ -278,37 +295,37 @@ body {
         overflow-x: hidden;
     }
 
-    .header-right .toggle{
-        display:block
+    .header-right .toggle {
+        display: block
     }
 
-    .name{
+    .name {
         font-size: 23px;
 
     }
 
-    .moto{
+    .moto {
         font-size: 28px;
     }
 
-    .shop{
+    .shop {
         justify-content: space-evenly;
         flex-direction: column;
         gap: 20px;
         padding: 20px;
     }
-    
-    .dress{
+
+    .dress {
         display: flex;
         justify-content: center;
-        align-items: flex-end;
+        align-items: flex-start;
         background-image: url(../images/Hijab.png);
         background-size: cover;
         width: auto;
         height: 100vh;
     }
-    
-    .hijab{
+
+    .hijab {
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -318,12 +335,12 @@ body {
         height: 100vh;
     }
 
-    .shop .dress-produk{
+    .shop .dress-produk {
         font-size: 3.5rem;
-        margin-bottom: 150px;
+        background-color: red;
     }
-    
-    .shop .btn-dress{
+
+    .shop .btn-dress {
         display: flex;
         height: 60px;
         justify-content: center;
@@ -335,15 +352,13 @@ body {
         border: 2px solid #fff;
         border-radius: 25px;
         font-size: 26px;
-        top: 1500px;
     }
 
-    .shop .hijab-produk{
+    .shop .hijab-produk {
         font-size: 3.5rem;
-        margin-bottom: 150px;
     }
-    
-    .shop .btn-hijab{
+
+    .shop .btn-hijab {
         display: flex;
         height: 60px;
         justify-content: center;
@@ -357,19 +372,19 @@ body {
         font-size: 26px;
         margin-bottom: 65px;
     }
-    
-    .shop a:hover{
+
+    .shop a:hover {
         color: #000000;
         background-color: #fff;
         transition: 0.5s;
     }
 
-    .article h3{
+    .article h3 {
         font-size: 2.3rem;
         color: #fff;
     }
-    
-    .article a{
+
+    .article a {
         text-decoration: none;
         color: #fff;
         margin-top: 30px;
@@ -384,27 +399,27 @@ body {
         overflow-x: hidden;
     }
 
-    .header-right .toggle{
-        display:block
+    .header-right .toggle {
+        display: block
     }
 
-    .name{
+    .name {
         font-size: 25px;
 
     }
 
-    .moto{
+    .moto {
         font-size: 35px;
     }
 
-    .shop{
+    .shop {
         justify-content: space-evenly;
         flex-direction: column;
         gap: 20px;
         padding: 20px;
     }
-    
-    .dress{
+
+    .dress {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -413,8 +428,8 @@ body {
         width: auto;
         height: 100vh;
     }
-    
-    .hijab{
+
+    .hijab {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -423,13 +438,13 @@ body {
         width: auto;
         height: 100vh;
     }
-    
-    .shop .dress-produk{
+
+    .shop .dress-produk {
         font-size: 3.5rem;
         margin-bottom: 150px;
     }
-    
-    .shop .btn-dress{
+
+    .shop .btn-dress {
         display: flex;
         height: 60px;
         justify-content: center;
@@ -444,12 +459,12 @@ body {
         top: 1500px;
     }
 
-    .shop .hijab-produk{
+    .shop .hijab-produk {
         font-size: 3.5rem;
         margin-bottom: 150px;
     }
-    
-    .shop .btn-hijab{
+
+    .shop .btn-hijab {
         display: flex;
         height: 60px;
         justify-content: center;
@@ -463,19 +478,19 @@ body {
         font-size: 26px;
         margin-top: 710px;
     }
-    
-    .shop a:hover{
+
+    .shop a:hover {
         color: #000000;
         background-color: #fff;
         transition: 0.5s;
     }
-    
-    .article h3{
+
+    .article h3 {
         font-size: 2.3rem;
         color: #fff;
     }
-    
-    .article a{
+
+    .article a {
         text-decoration: none;
         color: #fff;
         margin-top: 30px;
@@ -491,18 +506,20 @@ body {
         width: 60%;
     }
 
-    .hero{
+    .hero {
         background-position: top;
         background-size: cover;
     }
-    .text-hero{
+
+    .text-hero {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         margin-bottom: 40px;
     }
-    .name{
+
+    .name {
         top: 700px;
         font-family: cinzel-reguler;
         font-weight: 400;
@@ -510,7 +527,7 @@ body {
         font-size: 2em;
     }
 
-    .moto{
+    .moto {
         top: 800px;
         font-family: cinzel-bold;
         font-weight: bold;
@@ -518,28 +535,28 @@ body {
         font-size: 3em;
     }
 
-    .shop{
+    .shop {
         justify-content: space-evenly;
         flex-direction: column;
         gap: 20px;
         padding: 20px;
     }
-    
-    .dress{
+
+    .dress {
         background-image: url(../images/Hijab.png);
         background-size: cover;
         width: auto;
         height: 100vh;
     }
-    
-    .hijab{
+
+    .hijab {
         background-image: url(../images/Dress.png);
         background-size: cover;
         width: auto;
         height: 100vh;
     }
-    
-    .shop .dress-produk{
+
+    .shop .dress-produk {
         color: #fff;
         font-size: 85px;
         font-family: cinzel-reguler;
@@ -547,8 +564,9 @@ body {
         margin: 20px;
         margin-top: 600px;
     }
-    
-    .shop .btn-dress{
+
+
+    .shop .btn-dress {
         display: flex;
         height: 60px;
         justify-content: center;
@@ -557,16 +575,14 @@ body {
         text-decoration: none;
         font-family: redhat-reguler;
         color: #fff;
-        position: absolute;
         border: 2px solid #fff;
         margin: 20px;
         border-radius: 25px;
         font-size: 26px;
-        top: 1500px;
-    
+
     }
 
-    .shop .hijab-produk{
+    .shop .hijab-produk {
         color: #fff;
         font-size: 85px;
         font-family: cinzel-reguler;
@@ -574,8 +590,8 @@ body {
         margin: 20px;
         margin-top: 600px;
     }
-    
-    .shop .btn-hijab{
+
+    .shop .btn-hijab {
         display: flex;
         height: 60px;
         justify-content: center;
@@ -584,27 +600,26 @@ body {
         text-decoration: none;
         font-family: redhat-reguler;
         color: #fff;
-        position: absolute;
         border: 2px solid #fff;
         margin: 20px;
         border-radius: 25px;
         font-size: 26px;
         margin-top: 32px;
-    
+
     }
-    
-    .shop a:hover{
+
+    .shop a:hover {
         color: #000000;
         background-color: #fff;
         transition: 0.5s;
     }
 
-    .article h3{
+    .article h3 {
         font-size: 45px;
         color: #fff;
     }
-    
-    .article a{
+
+    .article a {
         text-decoration: none;
         color: #fff;
         margin-top: 30px;
@@ -612,22 +627,24 @@ body {
         text-decoration-line: underline;
     }
 
-    
+
 }
 
 /* Styles for devices with a width greater than 1024px (e.g. large laptops and desktops) */
 @media screen and (min-width: 1025px) {
-    .hero{
+    .hero {
         background-position: top;
     }
-    .text-hero{
+
+    .text-hero {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         margin-bottom: 40px;
     }
-    .name{
+
+    .name {
         top: 700px;
         font-family: cinzel-reguler;
         font-weight: 400;
@@ -635,7 +652,7 @@ body {
         font-size: 2.5em;
     }
 
-    .moto{
+    .moto {
         top: 800px;
         font-family: cinzel-bold;
         font-weight: bold;
@@ -643,37 +660,36 @@ body {
         font-size: 4.5em;
     }
 
-    .shop{
+    .shop {
         display: flex;
         justify-content: space-evenly;
         background-size: cover;
         gap: 20px;
         padding: 20px;
     }
-    
-    .dress{
+
+    .dress {
         background-image: url(../images/Hijab.png);
         width: 100vw;
         height: 100vh;
     }
-    
-    .hijab{
+
+    .hijab {
         background-image: url(../images/Dress.png);
         width: 100vw;
         height: 100vh;
     }
 
-    .shop .dress-produk{
+    .shop .dress-produk {
         color: #fff;
         font-size: 85px;
-        position: absolute;
         font-family: cinzel-reguler;
         font-weight: 400;
         margin: 20px;
         top: 1376px;
     }
 
-    .shop .btn-dress{
+    .shop .btn-dress {
         display: flex;
         height: 60px;
         justify-content: center;
@@ -682,26 +698,23 @@ body {
         text-decoration: none;
         font-family: redhat-reguler;
         color: #fff;
-        position: absolute;
         border: 2px solid #fff;
         margin: 20px;
         border-radius: 25px;
         font-size: 26px;
-        top: 1500px;
-    
+
     }
-    
-    .shop .hijab-produk{
+
+    .shop .hijab-produk {
         color: #fff;
         font-size: 85px;
-        position: absolute;
         font-family: cinzel-reguler;
         font-weight: 400;
         margin: 20px;
         top: 1376px;
     }
-    
-    .shop .btn-hijab{
+
+    .shop .btn-hijab {
         display: flex;
         height: 60px;
         justify-content: center;
@@ -710,21 +723,18 @@ body {
         text-decoration: none;
         font-family: redhat-reguler;
         color: #fff;
-        position: absolute;
         border: 2px solid #fff;
         margin: 20px;
         border-radius: 25px;
         font-size: 26px;
         top: 1500px;
-    
+
     }
-    
-    .shop a:hover{
+
+    .shop a:hover {
         color: #000000;
         background-color: #fff;
         transition: 0.5s;
     }
 
 }
-
-

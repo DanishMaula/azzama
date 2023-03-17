@@ -2,13 +2,14 @@
 
 @section('link')
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
 @endsection
 
 @section('content')
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
+
 <body>
     <section class="home hero">
         <div class="text-hero">
@@ -26,12 +28,16 @@
     </section>
     <section class="shop">
         <div class="dress">
-            <p class="dress-produk">Dress</p>
-            <a href="#" class="btn-dress">SHOP NOW</a>
+            <div class="container-dress">
+                <p class="dress-produk">Dress</p>
+                <a href="#" class="btn-dress">SHOP NOW</a>
+            </div>
         </div>
         <div class="hijab">
-            <p class="hijab-produk">Hijab</p>
-            <a href="#" class="btn-hijab">SHOP NOW</a>
+            <div class="container-hijab">
+                <p class="hijab-produk">Hijab</p>
+                <a href="#" class="btn-hijab">SHOP NOW</a>
+            </div>
         </div>
     </section>
     <section class="article">
@@ -41,15 +47,16 @@
         </div>
 
         <div class="swipper-article">
-            
+
         </div>
     </section>
-    
+
 
     <!--- JS --->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="{{ asset('js/script.js') }}"></script>
 </body>
+
 </html>
 @endsection
