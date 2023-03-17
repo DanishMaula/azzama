@@ -26,7 +26,7 @@
 <body>
     <div id="app">
         <nav class="navbar">
-            <div class="header-left">
+            {{-- <div class="header-left">
                 <div class="navbar-brand">
                     <a href="#">Azzama</a>
                 </div>
@@ -61,13 +61,13 @@
                                 fill="black" />
                         </svg>
                     </a>
-                </div>
+                </div> --}}
                 {{-- <div class="toggle">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div> --}}
-            </div>
+            {{-- ` --}}
         </nav>
 
         <main class="py-4">

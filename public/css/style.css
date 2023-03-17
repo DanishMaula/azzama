@@ -33,6 +33,12 @@
 
 body {
     background-color: #FEFDF3;
+    
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
 }
 
 .navbar {
@@ -338,15 +344,15 @@ body {
 
     .btn-dress {
         display: flex;
-        height: 60px;
+        height: 6vh;
         justify-content: center;
         align-items: center;
-        width: 387px;
+        width: 350px;
         text-decoration: none;
         font-family: redhat-reguler;
         color: #fff;
         border: 2px solid #fff;
-        border-radius: 25px;
+        border-radius: 20px;
         font-size: 26px;
     }
 
@@ -358,15 +364,15 @@ body {
 
     .btn-hijab {
         display: flex;
-        height: 60px;
+        height: 6vh;
         justify-content: center;
         align-items: center;
-        width: 387px;
+        width: 350px;
         text-decoration: none;
         font-family: redhat-reguler;
         color: #fff;
         border: 2px solid #fff;
-        border-radius: 25px;
+        border-radius: 20px;
         font-size: 26px;
     }
 
@@ -377,7 +383,7 @@ body {
     }
 
     .article h3 {
-        font-size: 2.3rem;
+        font-size: 1.8rem;
         color: #fff;
     }
 
