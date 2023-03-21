@@ -18,8 +18,8 @@
 
     <!-- Styles -->
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
-    <link rel="stylesheet" href="css/style.css">
-
+    {{-- <link rel="stylesheet" href="css/style.css"> --}}
+    @yield('swipper')
     @yield('link')
 
 </head>
@@ -74,5 +74,21 @@
             @yield('content')
         </main>
     </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        console.log('test')
+
+    </script>
 </body>
 </html>
