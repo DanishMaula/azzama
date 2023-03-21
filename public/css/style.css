@@ -184,9 +184,10 @@ html{
     padding: 60px;
 }
 
-.article h3 {
+.article p {
     font-size: 55px;
     color: #fff;
+    font-family: cinzel-bold;
 }
 
 .article a {
@@ -312,8 +313,9 @@ html{
         transition: 0.5s;
     }
 
-    .article h3 {
-        font-size: 1.8rem;
+    .article p {
+        font-family: cinzel-bold;
+        font-size: 28px;
         color: #fff;
     }
 
@@ -417,8 +419,9 @@ html{
         transition: 0.5s;
     }
 
-    .article h3 {
-        font-size: 2.3rem;
+    .article p {
+        font-size: 2rem;
+        font-family: cinzel-bold;
         color: #fff;
     }
 
@@ -550,8 +553,9 @@ html{
         transition: 0.5s;
     }
 
-    .article h3 {
+    .article p {
         font-size: 45px;
+        font-family: cinzel-bold;
         color: #fff;
     }
 

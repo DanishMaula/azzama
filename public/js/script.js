@@ -1,4 +1,5 @@
 
+
 // Navbar 
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.querySelector('.navbar-menu');
@@ -31,3 +32,5 @@ window.onscroll = function () {
     presScrollpos = currentScrollpos;
 
 };
+\\
+
