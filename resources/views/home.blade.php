@@ -2,7 +2,7 @@
 
 @section('link')
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 
 @endsection
 
@@ -33,7 +33,7 @@
     </section>
     <section class="article">
         <div class="text-article">
-            <h3 class="judul-article">AZZAMA ARTICLE</h3>
+            <p class="judul-article">AZZAMA ARTICLE</p>
             <a href="#" class="discover">Discover More</a>
         </div>
 
