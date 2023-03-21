@@ -32,5 +32,37 @@ window.onscroll = function () {
     presScrollpos = currentScrollpos;
 
 };
+<<<<<<< HEAD
 \\
 
+=======
+
+
+// Footer
+// button
+const titles = document.querySelectorAll('.title');
+titles.forEach(title => {
+    title.addEventListener('click', () => {
+        // description
+        const desc = title.nextElementSibling;
+        // button toggle
+        const titleBtn = title.children[1];
+        if (desc.style.display === "block") {
+            desc.style.display = "none";
+            titleBtn.textContent = '+';
+        } else {
+            desc.style.display = "block";
+            titleBtn.textContent = '-';
+        }
+        // Hide all other descriptions
+        titles.forEach(otherTitle => {
+            if (otherTitle !== title) {
+                const otherDesc = otherTitle.nextElementSibling;
+                const otherTitleBtn = otherTitle.children[1];
+                otherDesc.style.display = 'none';
+                otherTitleBtn.textContent = '+';
+            }
+        });
+    });
+});
+>>>>>>> fab48ab (js for footer)
