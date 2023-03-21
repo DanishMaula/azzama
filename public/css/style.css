@@ -1,22 +1,22 @@
 @font-face {
     font-family: cinzel-bold;
-    src: url('/public/font/Cinzel-Bold.ttf');
+    src: url(../font/Cinzel-Bold.ttf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: cinzel-reguler;
-    src: url('/public/font/Cinzel-Regular.ttf');
+    src: url(../font/Cinzel-Regular.ttf);
 }
 
 @font-face {
     font-family: redhat-bold;
-    src: url('/public/font/RedHatDisplay-Bold.ttf');
+    src: url(../font/RedHatDisplay-Bold.ttf);
 }
 
 @font-face {
     font-family: redhat-reguler;
-    src: url('/public/font/RedHatDisplay-Regular.ttf');
+    src: url(../font/RedHatDisplay-Regular.ttf);
 }
 
 
