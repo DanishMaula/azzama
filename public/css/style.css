@@ -19,8 +19,6 @@
     src: url(../font/RedHatDisplay-Regular.ttf);
 }
 
-
-
 :root {
     --background: #FEFDF3;
 }
@@ -33,7 +31,6 @@
 
 body {
     background-color: #FEFDF3;
-    
 }
 
 html{
@@ -41,101 +38,6 @@ html{
     height: 100vh;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    background-color: transparent;
-    width: 100%;
-    min-height: 10%;
-}
-
-.navbar:hover {
-    background-color: var(--background);
-}
-
-.header-left {
-    display: flex;
-    width: 30%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar-brand {
-    font-size: 2rem;
-}
-
-.navbar-brand a {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: cinzel-bold;
-}
-
-.navbar-menu {
-    display: flex;
-    list-style: none;
-    height: 8vh;
-    padding: 0 3rem;
-    align-items: center;
-    box-sizing: border-box;
-    gap: 30px;
-}
-
-.navbar-item {
-    /* padding: 0 20px; */
-    display: flex;
-    height: 100%;
-    align-items: center;
-    border-bottom: 2px solid transparent;
-}
-
-.navbar-item:hover {
-    border-bottom-color: black;
-    /* text-transform:uppercase; */
-}
-
-.navbar-item a {
-    position: relative;
-    color: black;
-    display: block;
-    text-decoration: none;
-    font-family: redhat-bold;
-    font-size: 1rem;
-    letter-spacing: 3px;
-    /* box-sizing: border-box; */
-}
-
-.header-right {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.navbar-icons {
-    display: flex;
-    gap: 25px;
-}
-
-.navbar-icons a {
-    color: #000000;
-    text-decoration: none;
-}
-
-.header-right .toggle {
-    cursor: pointer;
-    display: none;
-}
-
-.header-right .toggle div {
-    width: 25px;
-    height: 4px;
-    background: black;
-    margin: 5px;
-    border-radius: 5px;
-}
 
 .hero {
     width: 100vw;
@@ -145,7 +47,6 @@ html{
     display: flex;
     justify-content: center;
     align-items: end;
-    background-image: url(../images/main1.jpg);
 
 }
 
