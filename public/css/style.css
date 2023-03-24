@@ -19,8 +19,6 @@
     src: url(../font/RedHatDisplay-Regular.ttf);
 }
 
-
-
 :root {
     --background: #FEFDF3;
 }
@@ -33,7 +31,6 @@
 
 body {
     background-color: #FEFDF3;
-    
 }
 
 html{
@@ -50,7 +47,6 @@ html{
     display: flex;
     justify-content: center;
     align-items: end;
-    background-image: url(../images/main1.jpg);
 
 }
 

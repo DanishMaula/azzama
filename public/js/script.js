@@ -32,11 +32,6 @@ window.onscroll = function () {
     presScrollpos = currentScrollpos;
 
 };
-<<<<<<< HEAD
-\\
-
-=======
-
 
 // Footer
 // button
@@ -65,4 +60,3 @@ titles.forEach(title => {
         });
     });
 });
->>>>>>> fab48ab (js for footer)
