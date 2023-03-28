@@ -32,7 +32,7 @@
             <div class="navbar-brand">
                 <a href="#">Azzama</a>
             </div>
-            <ul class="navbar-menu">
+            <ul class="navbar-menu" style="margin: 0;">
                 <li class="navbar-item">
                     <a href="#">Hijab</a>
                 </li>
