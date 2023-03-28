@@ -23,6 +23,7 @@
                 <p class="dress-produk">Dress</p>
                 <a href="#" class="btn-dress">SHOP NOW</a>
             </div>
+            
         </div>
         <div class="hijab">
             <div class="container-hijab">
@@ -34,7 +35,7 @@
     <section class="article">
         <div class="text-article">
             <p class="judul-article">AZZAMA ARTICLE</p>
-            <a href="#" class="discover">Discover More</a>
+            <a href=" {{ route('article')}}" class="discover">Discover More</a>
         </div>
 
         <div class="swiper mySwiper">
