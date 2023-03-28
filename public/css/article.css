@@ -1,0 +1,23 @@
+body {
+    background-color: #FEFDF3;
+    
+}
+
+.text-articles {
+    top: 700px;
+    font-family: cinzel-reguler;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 80px;
+    margin-top: 115px;
+    font-size: 4em;
+}
+
+.list-article{
+    padding: 20px;
+}
+
+.img-article{
+    width: 300px;
+    height: 300px;
+}
