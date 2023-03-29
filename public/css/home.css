@@ -1,0 +1,448 @@
+@font-face {
+    font-family: cinzel-bold;
+    src: url(../font/Cinzel-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: cinzel-reguler;
+    src: url(../font/Cinzel-Regular.ttf);
+}
+
+@font-face {
+    font-family: redhat-bold;
+    src: url(../font/RedHatDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: redhat-reguler;
+    src: url(../font/RedHatDisplay-Regular.ttf);
+}
+
+
+
+:root {
+    --background: #FEFDF3;
+    --article:#E6B0AA;
+    --text:#FEFDF3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.hero{
+    position:relative;
+    width:100%;
+    height:45rem;
+    background-image: url(../images/main1.jpg);
+    background-size: cover;
+    background-position: top;
+    display:flex;
+    justify-content:center;
+    align-items:end;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); 
+  }
+
+
+.hero .text-hero{
+    z-index:2;
+    color:var(--text);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1.5rem;
+    padding:2rem;
+}
+
+.hero .text-hero .name{
+    font-family:'cinzel-reguler';
+    font-size:2.5rem;
+}
+
+.hero .text-hero .moto{
+    font-family:'cinzel-bold';
+    font-size:4.3rem;
+    letter-spacing:5px;
+}
+
+.shop{
+    width:100%;
+    min-height:fit-content;
+    background-color:var(--background); 
+    padding:1.5rem;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:1.5rem;
+}
+
+.shop .item{
+    width:100%;
+    height:50rem;
+    display:flex;
+    align-items:end;
+}
+.shop .dress{
+    
+    background-image: url(../images/Dress.png);
+    background-size: cover;
+}
+.shop .hijab{
+    background-image: url(../images/Hijab.png);
+    background-size: cover;
+}
+
+.item .container{
+    display:flex;
+    flex-direction:column;
+    background:none;
+    padding:3rem 1.5rem;
+    gap:2rem;
+}
+
+.item .container p{
+    font-family:'cinzel-reguler';
+    font-size:6rem;
+    color:var(--text);
+}
+
+.item .container a{
+    font-size:25px;
+    text-decoration:none;
+    color:var(--text);
+    font-family:'redhat-reguler';
+    border:2px solid var(--text);
+    border-radius:50px;
+    padding:0.5rem 9rem;
+    text-align:center;
+}
+
+.item .container a:hover{
+    background-color:var(--text);
+    color:black;
+}
+
+.article{
+    width:100vw;
+    min-height:fit-content;
+    padding:0 1.5rem 1.5rem;
+}
+
+.article .content{
+    width:100%;
+    height:500px;
+    background:var(--article);
+    padding:3rem 3rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.content .header a{
+    font-size: 36px;
+    color:var(--background);
+    text-transform:uppercase;
+    font-family:"cinzel-reguler";
+    padding:10px 0;
+    text-decoration:none;
+    border-bottom:1px solid var(--background);
+}
+
+
+.content .articles{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.content .articles .article-item{
+    max-width:22rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    margin:0 1rem;
+    gap:1rem;
+}
+
+
+.article-item a img{
+    width:22rem;
+    height:13rem;
+    background-size: cover;
+}
+
+.article-item .article-title{
+    width:100%;
+    height:4rem;
+    display:flex;
+    text-align:center;
+    justify-content:center;
+}
+
+.article-title p{
+    font-size:20px;
+    color:var(--background);
+    font-family:"redhat-reguler";
+}
+
+
+
+
+/* Styles for devices with a width greater than 1024px (e.g. large laptops and desktops) */
+
+@media screen and (min-width:1200px){
+
+}
+@media screen and (min-width: 1025px) and (max-width:1199px) {
+    .content .articles .article-item{
+        max-width:17rem;
+    }
+
+    .article-item a img{
+        width:17rem;
+        height:10rem;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero{
+        height:40rem;
+    }
+    
+    .hero .text-hero .name{
+        font-size:2rem;
+    }
+    
+    .hero .text-hero .moto{
+        font-size:3rem;
+    }
+    
+    .shop{
+        width:100%;
+        padding:1rem;
+        gap:1rem;
+    }
+
+    .shop .item{
+        width:50%;
+        height:35rem;
+        display:flex;
+        align-items:end;
+    }
+
+    .item .container{
+       padding:2rem 1rem;
+       gap:1rem;
+    }
+
+    .item .container p{
+        font-size:4rem;
+    }
+
+    .item .container a{
+        padding:0.5rem 5rem;
+    }
+
+    .article{
+        padding:0 1rem 1rem;
+    }
+
+    .article .content{
+        height:400px;
+    }
+
+    .content .header a{
+        font-size: 1.5rem;
+    }
+
+    .content .articles .article-item{
+        max-width:12rem;
+    }
+
+    .article-item a img{
+        width:12rem;
+        height:7rem;
+        background-size: cover;
+    }
+
+    .article-title p{
+        font-size:1rem;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .hero{
+        height:45rem;
+    }
+    
+    .hero .text-hero .name{
+        font-size:1rem;
+    }
+    
+    .hero .text-hero .moto{
+        font-size:1.5rem;
+    }
+    
+    .shop{
+        width:100%;
+        padding:1rem;
+        gap:1rem;
+        flex-direction:column;
+    }
+
+    .shop .item{
+        width:100%;
+        height:40rem;
+        display:flex;
+        align-items:end;
+        justify-content:center;
+    }
+
+    .item .container{
+       padding:2rem 1rem;
+       gap:1rem;
+       justify-content:center;
+    }
+
+    .item .container p{
+        font-size:2rem;
+        text-align:center;
+    }
+
+    .item .container a{
+        padding:0.4rem 3rem;
+    }
+
+
+    .article{
+        padding:0 1rem 1rem;
+    }
+
+    .article .content{
+        height:780px;
+    }
+
+    .content .header a{
+        font-size:20px;
+    }
+
+    .content .articles{
+        flex-direction:column;
+        gap:0.5rem;
+    }
+
+    .content .articles .article-item{
+        max-width:12rem;
+
+    }
+
+    .article-item a img{
+        width:12rem;
+        height:7rem;
+        background-size: cover;
+    }
+
+    .article-title p{
+        font-size:14px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .hero{
+        height:45rem;
+    }
+    
+    .hero .text-hero .name{
+        font-size:1rem;
+    }
+    
+    .hero .text-hero .moto{
+        font-size:1.5rem;
+    }
+    
+    .shop{
+        width:100%;
+        padding:1rem;
+        gap:1rem;
+        flex-direction:column;
+    }
+
+    .shop .item{
+        width:100%;
+        height:40rem;
+        display:flex;
+        align-items:end;
+        justify-content:center;
+    }
+
+    .item .container{
+       padding:2rem 1rem;
+       gap:1rem;
+       justify-content:center;
+    }
+
+    .item .container p{
+        font-size:2rem;
+        text-align:center;
+    }
+
+    .item .container a{
+        padding:0.4rem 3rem;
+    }
+
+
+    .article{
+        padding:0 1rem 1rem;
+    }
+
+    .article .content{
+        height:750px;
+    }
+
+    .content .header a{
+        font-size:1rem;
+    }
+
+    .content .articles{
+        flex-direction:column;
+        gap:0.5rem;
+    }
+
+    .content .articles .article-item{
+        max-width:12rem;
+
+    }
+
+    .article-item a img{
+        width:12rem;
+        height:7rem;
+        background-size: cover;
+    }
+
+    .article-title p{
+        font-size:12px;
+    }
+}
