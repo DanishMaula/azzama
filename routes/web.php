@@ -22,6 +22,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/article', 'ArticleController@index')->name('article');
+Route::get('/article', 'ArticleController@article')->name('article');
 
 Route::get('/article/detail/{id}', 'DetailArticleController@detail')->name('article.detail');

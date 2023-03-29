@@ -21,6 +21,7 @@
     <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/article.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/detail-article.css') }}" rel="stylesheet">
     
     @yield('swipper')
     @yield('link')
@@ -141,6 +142,6 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <script src="js/script.js"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>

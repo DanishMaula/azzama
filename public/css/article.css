@@ -22,6 +22,8 @@ body {
 
 /* Image Preview Article */
 .img-article{
+    object-position:  center;
+    object-fit: contain;
     width: 300px;
     height: 300px;
 }

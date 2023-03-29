@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
-    public function index()
+    public function article()
     {
         return view('article', [
             'article' => ArticleModel::all()
