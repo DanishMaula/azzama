@@ -40,7 +40,7 @@ body {
 
 .hero{
     position:relative;
-    width:100vw;
+    width:100%;
     height:45rem;
     background-image: url(../images/main1.jpg);
     background-size: cover;
@@ -84,9 +84,9 @@ body {
 }
 
 .shop{
-    width:100vw;
+    width:100%;
     min-height:fit-content;
-    background-color:var(--background);
+    background-color:var(--background); 
     padding:1.5rem;
     display:flex;
     flex-direction:row;
@@ -148,30 +148,302 @@ body {
 
 .article .content{
     width:100%;
-    height:90vh;
+    height:500px;
     background:var(--article);
-}
-
-.content .article-text{
+    padding:3rem 3rem;
     display:flex;
     flex-direction:column;
-    gap:1.5rem;
-    color:var(--text);
+    justify-content:space-between;
     align-items:center;
-    padding:1rem;
 }
 
-.content .article-text p{
-    font-size:3.3rem;
-    font-family:'cinzel-reguler';
+.content .header a{
+    font-size: 36px;
+    color:var(--background);
     text-transform:uppercase;
+    font-family:"cinzel-reguler";
+    padding:10px 0;
+    text-decoration:none;
+    border-bottom:1px solid var(--background);
 }
 
-.content .article-text a{
-    text-decoration:none;
-    border-bottom:2px solid var(--text);
-    color:var(--text);
-    font-size:1.5rem;
-    font-family:'redhat-reguler';
-    letter-spacing:2px;
+
+.content .articles{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.content .articles .article-item{
+    max-width:22rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    margin:0 1rem;
+    gap:1rem;
+}
+
+
+.article-item a img{
+    width:22rem;
+    height:13rem;
+    background-size: cover;
+}
+
+.article-item .article-title{
+    width:100%;
+    height:4rem;
+    display:flex;
+    text-align:center;
+    justify-content:center;
+}
+
+.article-title p{
+    font-size:20px;
+    color:var(--background);
+    font-family:"redhat-reguler";
+}
+
+
+
+
+/* Styles for devices with a width greater than 1024px (e.g. large laptops and desktops) */
+
+@media screen and (min-width:1200px){
+
+}
+@media screen and (min-width: 1025px) and (max-width:1199px) {
+    .content .articles .article-item{
+        max-width:17rem;
+    }
+
+    .article-item a img{
+        width:17rem;
+        height:10rem;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero{
+        height:40rem;
+    }
+    
+    .hero .text-hero .name{
+        font-size:2rem;
+    }
+    
+    .hero .text-hero .moto{
+        font-size:3rem;
+    }
+    
+    .shop{
+        width:100%;
+        padding:1rem;
+        gap:1rem;
+    }
+
+    .shop .item{
+        width:50%;
+        height:35rem;
+        display:flex;
+        align-items:end;
+    }
+
+    .item .container{
+       padding:2rem 1rem;
+       gap:1rem;
+    }
+
+    .item .container p{
+        font-size:4rem;
+    }
+
+    .item .container a{
+        padding:0.5rem 5rem;
+    }
+
+    .article{
+        padding:0 1rem 1rem;
+    }
+
+    .article .content{
+        height:400px;
+    }
+
+    .content .header a{
+        font-size: 1.5rem;
+    }
+
+    .content .articles .article-item{
+        max-width:12rem;
+    }
+
+    .article-item a img{
+        width:12rem;
+        height:7rem;
+        background-size: cover;
+    }
+
+    .article-title p{
+        font-size:1rem;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .hero{
+        height:45rem;
+    }
+    
+    .hero .text-hero .name{
+        font-size:1rem;
+    }
+    
+    .hero .text-hero .moto{
+        font-size:1.5rem;
+    }
+    
+    .shop{
+        width:100%;
+        padding:1rem;
+        gap:1rem;
+        flex-direction:column;
+    }
+
+    .shop .item{
+        width:100%;
+        height:40rem;
+        display:flex;
+        align-items:end;
+        justify-content:center;
+    }
+
+    .item .container{
+       padding:2rem 1rem;
+       gap:1rem;
+       justify-content:center;
+    }
+
+    .item .container p{
+        font-size:2rem;
+        text-align:center;
+    }
+
+    .item .container a{
+        padding:0.4rem 3rem;
+    }
+
+
+    .article{
+        padding:0 1rem 1rem;
+    }
+
+    .article .content{
+        height:780px;
+    }
+
+    .content .header a{
+        font-size:20px;
+    }
+
+    .content .articles{
+        flex-direction:column;
+        gap:0.5rem;
+    }
+
+    .content .articles .article-item{
+        max-width:12rem;
+
+    }
+
+    .article-item a img{
+        width:12rem;
+        height:7rem;
+        background-size: cover;
+    }
+
+    .article-title p{
+        font-size:14px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .hero{
+        height:45rem;
+    }
+    
+    .hero .text-hero .name{
+        font-size:1rem;
+    }
+    
+    .hero .text-hero .moto{
+        font-size:1.5rem;
+    }
+    
+    .shop{
+        width:100%;
+        padding:1rem;
+        gap:1rem;
+        flex-direction:column;
+    }
+
+    .shop .item{
+        width:100%;
+        height:40rem;
+        display:flex;
+        align-items:end;
+        justify-content:center;
+    }
+
+    .item .container{
+       padding:2rem 1rem;
+       gap:1rem;
+       justify-content:center;
+    }
+
+    .item .container p{
+        font-size:2rem;
+        text-align:center;
+    }
+
+    .item .container a{
+        padding:0.4rem 3rem;
+    }
+
+
+    .article{
+        padding:0 1rem 1rem;
+    }
+
+    .article .content{
+        height:750px;
+    }
+
+    .content .header a{
+        font-size:1rem;
+    }
+
+    .content .articles{
+        flex-direction:column;
+        gap:0.5rem;
+    }
+
+    .content .articles .article-item{
+        max-width:12rem;
+
+    }
+
+    .article-item a img{
+        width:12rem;
+        height:7rem;
+        background-size: cover;
+    }
+
+    .article-title p{
+        font-size:12px;
+    }
 }

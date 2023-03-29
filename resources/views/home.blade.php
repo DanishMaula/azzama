@@ -4,9 +4,6 @@
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
 @endsection
-@section('swipper')
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-@endsection
 
 @section('content')
 <section class="home hero">
@@ -31,44 +28,31 @@
     </div>
 </section>
 <section class="article">
-    <div class="text-article">
-        <p class="judul-article">AZZAMA ARTICLE</p>
-        <a href=" {{ route('article')}}" class="discover">Discover More</a>
-    </div>
-
-    <div class="swiper mySwiper">
-        {{-- <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="images/main1.jpg" alt="">
-                    <div class="caption">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia facere incidunt quasi? Eveniet quo magnam excepturi, ea maxime dolore nemo!</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/main1.jpg" alt="">
-                    <div class="caption"></div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/main1.jpg" alt="">
-                    <div class="caption">
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/main1.jpg" alt="">
-                    <div class="caption"></div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/main1.jpg" alt="">
-                    <div class="caption"></div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/main1.jpg" alt="">
-                    <div class="caption"></div>
+    <div class="content">
+        <div class="header">
+            <a href="">Azzama Articles</a>
+        </div>
+        <div class="articles">
+            <div class="article-item">
+                <a href=""><img src="../images/main.png" alt=""></a>
+                <div class="article-title">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
-        </div> --}}
+            <div class="article-item">
+                <a href=""><img src="../images/main.png" alt=""></a>
+                <div class="article-title">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="article-item">
+                <a href=""><img src="../images/main.png" alt=""></a>
+                <div class="article-title">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
 
