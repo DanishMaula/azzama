@@ -2,9 +2,6 @@
 @section('link')
 <link rel="stylesheet" href="css/home.css">
 @endsection
-@section('swipper')
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-@endsection
 
 @section('content')
 <section class="hero">
@@ -30,10 +27,29 @@
 
 <section class="article">
     <div class="content">
-    <div class="article-text">
-        <p class="title">Azzama article</p>
-        <a href="">Discover more</a>
-    </div>
+        <div class="header">
+            <a href="">Azzama Articles</a>
+        </div>
+        <div class="articles">
+            <div class="article-item">
+                <a href=""><img src="../images/main.png" alt=""></a>
+                <div class="article-title">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="article-item">
+                <a href=""><img src="../images/main.png" alt=""></a>
+                <div class="article-title">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="article-item">
+                <a href=""><img src="../images/main.png" alt=""></a>
+                <div class="article-title">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 @endsection
