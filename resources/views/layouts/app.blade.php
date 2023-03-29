@@ -18,9 +18,14 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
+
+    <link href="{{ asset('css/article.css') }}" rel="stylesheet">
+    
+    @yield('swipper')
+
     @yield('link')
 
 </head>
@@ -31,7 +36,7 @@
             <div class="navbar-brand">
                 <a href="#">Azzama</a>
             </div>
-            <ul class="navbar-menu">
+            <ul class="navbar-menu" style="margin: 0;">
                 <li class="navbar-item">
                     <a href="#">Hijab</a>
                 </li>
@@ -72,7 +77,7 @@
         </div>
     </nav>
     <div id="app">
-        <main class="py-4">
+        <main class="pb-4">
             @yield('content')
         </main>
     </div>
