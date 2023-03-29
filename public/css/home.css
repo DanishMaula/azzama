@@ -1,0 +1,177 @@
+@font-face {
+    font-family: cinzel-bold;
+    src: url(../font/Cinzel-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: cinzel-reguler;
+    src: url(../font/Cinzel-Regular.ttf);
+}
+
+@font-face {
+    font-family: redhat-bold;
+    src: url(../font/RedHatDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: redhat-reguler;
+    src: url(../font/RedHatDisplay-Regular.ttf);
+}
+
+
+
+:root {
+    --background: #FEFDF3;
+    --article:#E6B0AA;
+    --text:#FEFDF3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    overflow-x: hidden;
+}
+
+.hero{
+    position:relative;
+    width:100vw;
+    height:45rem;
+    background-image: url(../images/main1.jpg);
+    background-size: cover;
+    background-position: top;
+    display:flex;
+    justify-content:center;
+    align-items:end;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); 
+  }
+
+
+.hero .text-hero{
+    z-index:2;
+    color:var(--text);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1.5rem;
+    padding:2rem;
+}
+
+.hero .text-hero .name{
+    font-family:'cinzel-reguler';
+    font-size:2.5rem;
+}
+
+.hero .text-hero .moto{
+    font-family:'cinzel-bold';
+    font-size:4.3rem;
+    letter-spacing:5px;
+}
+
+.shop{
+    width:100vw;
+    min-height:fit-content;
+    background-color:var(--background);
+    padding:1.5rem;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:1.5rem;
+}
+
+.shop .item{
+    width:100%;
+    height:50rem;
+    display:flex;
+    align-items:end;
+}
+.shop .dress{
+    
+    background-image: url(../images/Dress.png);
+    background-size: cover;
+}
+.shop .hijab{
+    background-image: url(../images/Hijab.png);
+    background-size: cover;
+}
+
+.item .container{
+    display:flex;
+    flex-direction:column;
+    background:none;
+    padding:3rem 1.5rem;
+    gap:2rem;
+}
+
+.item .container p{
+    font-family:'cinzel-reguler';
+    font-size:6rem;
+    color:var(--text);
+}
+
+.item .container a{
+    font-size:25px;
+    text-decoration:none;
+    color:var(--text);
+    font-family:'redhat-reguler';
+    border:2px solid var(--text);
+    border-radius:50px;
+    padding:0.5rem 9rem;
+    text-align:center;
+}
+
+.item .container a:hover{
+    background-color:var(--text);
+    color:black;
+}
+
+.article{
+    width:100vw;
+    min-height:fit-content;
+    padding:0 1.5rem 1.5rem;
+}
+
+.article .content{
+    width:100%;
+    height:90vh;
+    background:var(--article);
+}
+
+.content .article-text{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+    color:var(--text);
+    align-items:center;
+    padding:1rem;
+}
+
+.content .article-text p{
+    font-size:3.3rem;
+    font-family:'cinzel-reguler';
+    text-transform:uppercase;
+}
+
+.content .article-text a{
+    text-decoration:none;
+    border-bottom:2px solid var(--text);
+    color:var(--text);
+    font-size:1.5rem;
+    font-family:'redhat-reguler';
+    letter-spacing:2px;
+}

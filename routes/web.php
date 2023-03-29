@@ -20,4 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/hijab', 'HijabController@index')->name('hijab');
+
+Route::get('/article', 'ArticleController@index')->name('article');
