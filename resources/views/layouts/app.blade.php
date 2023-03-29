@@ -40,7 +40,7 @@
                     <a href="#">Dress</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#">Article</a>
+                    <a href="{{ route('article')}}">Article</a>
                 </li>
             </ul>
         </div>
