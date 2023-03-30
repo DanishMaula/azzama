@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Dress;
 
-use App\Hijab;
 
-class HijabController extends Controller
+class DressController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,12 +15,8 @@ class HijabController extends Controller
      */
     public function index()
     {
-        // return view('tampilan.hijab', [
-        //     'catalog' => Hijab::all()
-        // ]);
-
-        $hijab = Hijab::all();
-        return view('tampilan.hijab', compact('hijab'));
+        $dress = Dress::all();
+        return view('tampilan.dress', compact('dress'));
     }
 
     /**
@@ -52,8 +48,7 @@ class HijabController extends Controller
      */
     public function show($id)
     {
-        $hijab = Hijab::findOrFail($id);
-        return view('tampilan.detail', compact('hijab'));
+        
     }
 
     /**

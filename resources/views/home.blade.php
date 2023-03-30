@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('link')
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="css/home.css">
 
 @endsection
 
@@ -23,7 +22,7 @@
     <div class="hijab">
         <div class="container-hijab">
             <p class="hijab-produk">Hijab</p>
-            <a href="#" class="btn-hijab">SHOP NOW</a>
+            <a href="/hijab" class="btn-hijab">SHOP NOW</a>
         </div>
     </div>
 </section>

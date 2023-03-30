@@ -101,7 +101,6 @@ body {
     align-items:end;
 }
 .shop .dress{
-    
     background-image: url(../images/Dress.png);
     background-size: cover;
 }
@@ -382,6 +381,7 @@ body {
     
     .hero .text-hero .moto{
         font-size:1.5rem;
+        text-align:center;
     }
     
     .shop{

@@ -23,9 +23,11 @@
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
 
     <link href="{{ asset('css/article.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/detail-article.css') }}" rel="stylesheet">
     
     @yield('swipper')
-
+    @yield('article')
+    @yield('dress')
     @yield('link')
     @yield('hijab')
 
@@ -42,10 +44,10 @@
                     <a href="/hijab">Hijab</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#">Dress</a>
+                    <a href="/dress">Dress</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="/article">Article</a>
+                    <a href="{{ route('article')}}">Article</a>
                 </li>
             </ul>
         </div>
@@ -143,6 +145,9 @@
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>
