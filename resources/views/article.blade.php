@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('article')
+<link rel="stylesheet" href="css/article.css">
+@endsection
+
 @section('content')
     <div style="min-height: 100vh;" class="">
         <div class="text-article">
