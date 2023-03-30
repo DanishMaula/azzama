@@ -30,7 +30,6 @@ window.onscroll = function () {
         document.querySelector(".navbar").style.top = "-100px";
     }
     presScrollpos = currentScrollpos;
-
 };
 
 // Footer

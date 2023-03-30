@@ -22,6 +22,6 @@ Auth::routes();
 
 Route::get('/hijab', 'HijabController@index')->name('hijab');
 
-Route::get('/article', 'ArticleController@index')->name('article');
+Route::get('/article', 'ArticleController@article')->name('article');
 
 Route::get('/article/detail/{id}', 'DetailArticleController@detail')->name('article.detail');
