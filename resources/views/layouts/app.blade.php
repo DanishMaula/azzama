@@ -25,7 +25,8 @@
     <link href="{{ asset('css/article.css') }}" rel="stylesheet">
     
     @yield('swipper')
-
+    @yield('article')
+    @yield('dress')
     @yield('link')
     @yield('hijab')
 
@@ -42,7 +43,7 @@
                     <a href="/hijab">Hijab</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#">Dress</a>
+                    <a href="/dress">Dress</a>
                 </li>
                 <li class="navbar-item">
                     <a href="/article">Article</a>
