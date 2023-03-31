@@ -13,16 +13,20 @@
 
 Route::get('/', function () {
     return view('home');
+    
 });
 
-Auth::routes();
+// Route::get('/home/', 'HomeController@index');
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::resource('/hijab', 'HijabController');
 Route::resource('/dress', 'DressController');
 
 Route::get('/article', 'ArticleController@article')->name('article');
+
 
 Route::get('/article/detail/{id}', 'DetailArticleController@detail')->name('article.detail');
