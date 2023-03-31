@@ -282,7 +282,7 @@ body {
 
     .article-item a img{
         width:12rem;
-        height:7rem;
+        height:auto;
         background-size: cover;
     }
 
