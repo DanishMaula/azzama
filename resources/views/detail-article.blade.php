@@ -7,11 +7,10 @@
                 <center class="title-article-detail">{{ $detail->title }}</center>
             </p>
         </div>
-        <div class="row justify-content-center">
+        <div class="col text-center">
             <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
                 alt="photo-article" class=" img-article-detail">
-
-            <p class="content-article">{{ $detail->content }}</p>
+            <p style="padding-left: 50px; padding-right: 50px;" class="content-article">{{ $detail->content }}</p>
         </div>
 
 

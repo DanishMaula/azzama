@@ -18,7 +18,7 @@
                             @foreach ($article as $articleData)
                                 <div class="col-lg-4 list-article">
                                     <a href="{{ route('article.detail', $articleData->id)}}">
-                                        <div class="container justify-content-start">
+                                        <div class="container justify-content-start ">
                                             <img src="{{ asset('img/avatar.jpeg') }}" alt="img" class="img-article">
                                             <br></br>
                                             <div class="container">
