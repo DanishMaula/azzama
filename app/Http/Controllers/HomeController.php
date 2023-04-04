@@ -21,9 +21,7 @@ class HomeController extends Controller
         // } elseif (Auth::user()->role == 'customer') { // Role customer
         //     return view('home');
         // }
-
-        $articles = ArticleModel::orderBy('id', 'desc')->limit(3)->get();
-        return view('home' , compact('articles'));
+            
     }
     /**
      * Create a new controller instance.
