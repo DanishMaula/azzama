@@ -11,10 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-    
-});
+use App\Http\Controllers\HomeController;
+
+Route::get('/', 'HomeController@index')->name('home');
 
 // Route::get('/home/', 'HomeController@index');
 

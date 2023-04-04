@@ -15,8 +15,8 @@ class HomeController extends Controller
     public function index()
     {
 
-        $article = ArticleModel::all();
-        return view('home' , compact('article'));
+        $articles = ArticleModel::orderBy('id', 'desc')->limit(3)->get();
+        return view('home' , compact('articles'));
     }
     /**
      * Create a new controller instance.
@@ -24,8 +24,8 @@ class HomeController extends Controller
      * @return void
      */
     
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 }
