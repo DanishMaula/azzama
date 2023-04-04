@@ -11,17 +11,16 @@
         </div>
     </section>
     <section class="shop">
-        <div class="dress">
-            <div class="container-dress">
-                <p class="dress-produk">Dress</p>
+        <div class="item dress">
+            <div class="container dress">
+                <p class="text-produk">Dress</p>
                 <a href="#" class="btn-dress">SHOP NOW</a>
             </div>
-
         </div>
-        <div class="hijab">
-            <div class="container-hijab">
-                <p class="hijab-produk">Hijab</p>
-                <a href="/hijab" class="btn-hijab">SHOP NOW</a>
+        <div class="item hijab">
+            <div class="container hijab">
+                <p class="text-produk">Hijab</p>
+                <a href="#" class="btn-hijab">SHOP NOW</a>
             </div>
         </div>
     </section>
@@ -33,19 +32,15 @@
             <div class="articles">
                 @foreach ($articles as $article)
                     <div class="article-item">
-                        <a href="{{ route('article.detail', $article->id)}}"><img src="../images/main.png" alt=""></a>
+                        <a href="{{ route('article.detail', $article->id) }}"><img src="../images/main.png"
+                                alt=""></a>
                         <div class="article-title">
                             <p>{{ $article->title }}</p>
                         </div>
                     </div>
                 @endforeach
 
-
             </div>
-
         </div>
-
-    </div>
-</section>
-
+    </section>
 @endsection
