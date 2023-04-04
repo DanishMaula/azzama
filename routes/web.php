@@ -11,15 +11,13 @@
 |
 */
 
-<<<<<<< HEAD
+
 Route::get('/', function () {
     return view('welcome');
 });
-=======
 use App\Http\Controllers\HomeController;
 
 Route::get('/', 'HomeController@index')->name('home');
->>>>>>> c9405c4ae5272b043056648fbfe6734b46d96902
 
 // Route::get('/home/', 'HomeController@index');
 
