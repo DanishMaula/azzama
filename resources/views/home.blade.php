@@ -12,17 +12,16 @@
     </div>
 </section>
 <section class="shop">
-    <div class="dress">
-        <div class="container-dress">
-            <p class="dress-produk">Dress</p>
+    <div class="item dress">
+        <div class="container dress">
+            <p class="text-produk">Dress</p>
             <a href="#" class="btn-dress">SHOP NOW</a>
         </div>
-        
     </div>
-    <div class="hijab">
-        <div class="container-hijab">
-            <p class="hijab-produk">Hijab</p>
-            <a href="/hijab" class="btn-hijab">SHOP NOW</a>
+    <div class="item hijab">
+        <div class="container hijab">
+            <p class="text-produk">Hijab</p>
+            <a href="#" class="btn-hijab">SHOP NOW</a>
         </div>
     </div>
 </section>
@@ -51,8 +50,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </section>
-
 @endsection
