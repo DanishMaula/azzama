@@ -12,15 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('home');
-    
+    return view('welcome');
 });
 
 // Route::get('/home/', 'HomeController@index');
 
 // Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('/home', 'HomeController');
 Auth::routes();
 
 Route::resource('/hijab', 'HijabController');
@@ -28,5 +27,8 @@ Route::resource('/dress', 'DressController');
 
 Route::get('/article', 'ArticleController@article')->name('article');
 
+Route::resource('/produk', 'AdminController');
+
+// Route::get('/produk', 'AdminController');
 
 Route::get('/article/detail/{id}', 'DetailArticleController@detail')->name('article.detail');

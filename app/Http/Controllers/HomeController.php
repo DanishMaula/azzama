@@ -14,9 +14,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-
-        $article = ArticleModel::all();
-        return view('home' , compact('article'));
+        return view('home');
+        
+        // if (Auth::user()->role == 'admin') { // Role admin
+        //     return view('tampilan.admin');
+        // } elseif (Auth::user()->role == 'customer') { // Role customer
+        //     return view('home');
+        // }
     }
     /**
      * Create a new controller instance.

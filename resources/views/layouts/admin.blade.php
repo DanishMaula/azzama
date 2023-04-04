@@ -35,7 +35,7 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    {{-- <nav class="navbar">
         <div class="header-left">
             <div class="navbar-brand">
                 <a href="/">Azzama</a>
@@ -63,7 +63,7 @@
                             d="M23.5 12.2951C23.5 18.2337 18.5986 23.0901 12.5 23.0901C6.4014 23.0901 1.5 18.2337 1.5 12.2951C1.5 6.3564 6.4014 1.5 12.5 1.5C18.5986 1.5 23.5 6.3564 23.5 12.2951Z"
                             stroke="black" stroke-width="3" />
                     </svg>
-                </a>
+                </a> --}}
                 {{-- <a href="/login">
                     <svg width="20" height="20" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -71,15 +71,15 @@
                             fill="black" />
                     </svg>
                 </a> --}}
-            </div>
+            {{-- </div>
             <div class="menu-toggle">
                 <input type="checkbox">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        </div>
-    </nav>
+        </div> --}}
+    {{-- </nav> --}}
     <div id="app">
         <main class="pb-4">
             @yield('content')
@@ -87,7 +87,7 @@
     </div>
 
     <!-- Footer -->
-    <footer>
+    {{-- <footer>
         <div class="footer-content">
             <div class="about">
                 <p class="title-about">AZZAMA</p>
@@ -145,7 +145,7 @@
                 <p>@copyright 2023 azzama muslimah</p>
             </div>
         </div>
-    </footer>
+    </footer> --}}
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
