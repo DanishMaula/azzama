@@ -42,7 +42,7 @@
                 </a>
                 <ul id="forms-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
                     <li>
-                        <a href="forms-elements.html" class="active">
+                        <a href="/produk" class="active">
                             <i class="bi bi-circle"></i><span>Tambah Produk</span>
                         </a>
                     </li>
@@ -66,7 +66,7 @@
                     </li>
                     <li>
                         <a href="forms-layouts.html">
-                            <i class="bi bi-circle"></i><span>Lihat Lihat Artikel</span>
+                            <i class="bi bi-circle"></i><span> Lihat Artikel</span>
                         </a>
                     </li>
                 </ul>
