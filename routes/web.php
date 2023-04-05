@@ -11,16 +11,19 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('home');
-    
-// });
+
+Route::get('/', function () {
+    return view('welcome');
+});
+use App\Http\Controllers\HomeController;
+
+// Route::get('/', 'HomeController@index')->name('home');
 
 // Route::get('/home/', 'HomeController@index');
 
 // Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('/home', 'HomeController');
 Auth::routes();
 
 Route::resource('/hijab', 'HijabController');
@@ -28,5 +31,8 @@ Route::resource('/dress', 'DressController');
 
 Route::get('/article', 'ArticleController@article')->name('article');
 
+Route::resource('/admin', 'AdminController');
+
+// Route::get('/produk', 'AdminController');
 
 Route::get('/article/detail/{id}', 'DetailArticleController@detail')->name('article.detail');

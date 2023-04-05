@@ -14,9 +14,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-
-        $articles = ArticleModel::orderBy('id', 'desc')->limit(3)->get();
-        return view('home' , compact('articles'));
+        return view('home');
+        
+        // if (Auth::user()->role == 'admin') { // Role admin
+        //     return view('tampilan.admin');
+        // } elseif (Auth::user()->role == 'customer') { // Role customer
+        //     return view('home');
+        // }
+            
     }
     /**
      * Create a new controller instance.
@@ -24,8 +29,8 @@ class HomeController extends Controller
      * @return void
      */
     
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 }
