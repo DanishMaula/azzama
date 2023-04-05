@@ -17,7 +17,7 @@ Route::get('/', function () {
 });
 use App\Http\Controllers\HomeController;
 
-Route::get('/', 'HomeController@index')->name('home');
+// Route::get('/', 'HomeController@index')->name('home');
 
 // Route::get('/home/', 'HomeController@index');
 
@@ -31,7 +31,7 @@ Route::resource('/dress', 'DressController');
 
 Route::get('/article', 'ArticleController@article')->name('article');
 
-Route::resource('/produk', 'AdminController');
+Route::resource('/admin', 'AdminController');
 
 // Route::get('/produk', 'AdminController');
 

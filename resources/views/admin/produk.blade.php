@@ -84,15 +84,16 @@
                     <li class="breadcrumb-item"><a href="/home">Home</a></li>
                 </ol>
             </nav>
-        </div><!-- End Page Title -->
+        </div>
+        <!-- End Page Title -->
 
         <section class="section">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
 
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">General Form Elements</h5>
+                            <h5 class="card-title">Masukan Data Prouduk</h5>
                             <!-- General Form Elements -->
                             <form>
                                 <div class="row mb-3">
@@ -102,30 +103,44 @@
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                                    <label for="inputText" class="col-sm-2 col-form-label">Harga</label>
                                     <div class="col-sm-10">
-                                        <input type="email" class="form-control">
+                                        <input type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                    <label for="inputText" class="col-sm-2 col-form-label">Warna yang tersedia</label>
                                     <div class="col-sm-10">
-                                        <input type="password" class="form-control">
+                                        <textarea
+                                            placeholder="Contoh: Black List Grey / Grey List Black / Salmon List Cream / Cream List Salmon / Pink List Nude / Nude List Pink / Grey List Nude / Nude List Grey"
+                                            class="form-control" style="height: 100px"></textarea>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <label for="inputNumber" class="col-sm-2 col-form-label">Number</label>
+                                    <label for="inputText" class="col-sm-2 col-form-label">Deskripsi Produk</label>
                                     <div class="col-sm-10">
-                                        <input type="number" class="form-control">
+                                        <textarea placeholder="Contoh: Pashmina Azzama ini terbuat dari bahan yang ringan dan lembut, sehingga sangat nyaman saat digunakan. Bahan yang digunakan juga tidak mudah kusut dan mudah dirawat. Pashmina ini dapat diikat dengan berbagai cara, sehingga memungkinkan penggunanya untuk bereksperimen dengan gaya berbusana yang berbeda." class="form-control" style="height: 100px"></textarea>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <label for="inputNumber" class="col-sm-2 col-form-label">File Upload</label>
+                                    <label for="inputNumber" class="col-sm-2 col-form-label">Stok</label>
+                                    <div class="col-sm-10">
+                                        <input placeholder="Contoh: 1" type="number" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputNumber" class="col-sm-2 col-form-label">Upload Produk</label>
                                     <div class="col-sm-10">
                                         <input class="form-control" type="file" id="formFile">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
+                                  <label for="inputText" class="col-sm-2 col-form-label">Link shopee</label>
+                                  <div class="col-sm-10">
+                                      <input placeholder="Contoh: https://shoope/produk" type="text" class="form-control">
+                                  </div>
+                              </div>
+                                {{-- <div class="row mb-3">
                                     <label for="inputDate" class="col-sm-2 col-form-label">Date</label>
                                     <div class="col-sm-10">
                                         <input type="date" class="form-control">
@@ -136,22 +151,22 @@
                                     <div class="col-sm-10">
                                         <input type="time" class="form-control">
                                     </div>
-                                </div>
+                                </div> --}}
 
-                                <div class="row mb-3">
+                                {{-- <div class="row mb-3">
                                     <label for="inputColor" class="col-sm-2 col-form-label">Color Picker</label>
                                     <div class="col-sm-10">
                                         <input type="color" class="form-control form-control-color"
                                             id="exampleColorInput" value="#4154f1" title="Choose your color">
                                     </div>
-                                </div>
-                                <div class="row mb-3">
+                                </div> --}}
+                                {{-- <div class="row mb-3">
                                     <label for="inputPassword" class="col-sm-2 col-form-label">Textarea</label>
                                     <div class="col-sm-10">
                                         <textarea class="form-control" style="height: 100px"></textarea>
                                     </div>
-                                </div>
-                                <fieldset class="row mb-3">
+                                </div> --}}
+                                {{-- <fieldset class="row mb-3">
                                     <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
                                     <div class="col-sm-10">
                                         <div class="form-check">
@@ -176,8 +191,8 @@
                                             </label>
                                         </div>
                                     </div>
-                                </fieldset>
-                                <div class="row mb-3">
+                                </fieldset> --}}
+                                {{-- <div class="row mb-3">
                                     <legend class="col-form-label col-sm-2 pt-0">Checkboxes</legend>
                                     <div class="col-sm-10">
 
@@ -196,28 +211,27 @@
                                         </div>
 
                                     </div>
-                                </div>
+                                </div> --}}
 
-                                <div class="row mb-3">
+                                {{-- <div class="row mb-3">
                                     <label class="col-sm-2 col-form-label">Disabled</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" value="Read only / Disabled" disabled>
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 <div class="row mb-3">
-                                    <label class="col-sm-2 col-form-label">Select</label>
+                                    <label class="col-sm-2 col-form-label">Kategori</label>
                                     <div class="col-sm-10">
                                         <select class="form-select" aria-label="Default select example">
-                                            <option selected>Open this select menu</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
+                                            <option selected>Pilih kategori</option>
+                                            <option value="1">Dress</option>
+                                            <option value="2">Hijab</option>
                                         </select>
                                     </div>
                                 </div>
 
-                                <div class="row mb-3">
+                                {{-- <div class="row mb-3">
                                     <label class="col-sm-2 col-form-label">Multi Select</label>
                                     <div class="col-sm-10">
                                         <select class="form-select" multiple aria-label="multiple select example">
@@ -227,12 +241,12 @@
                                             <option value="3">Three</option>
                                         </select>
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 <div class="row mb-3">
-                                    <label class="col-sm-2 col-form-label">Submit Button</label>
+                                    <label class="col-sm-2 col-form-label">Simpan & Tambahkan</label>
                                     <div class="col-sm-10">
-                                        <button type="submit" class="btn btn-primary">Submit Form</button>
+                                        <button type="submit" class="btn btn-primary">Tambahkan</button>
                                     </div>
                                 </div>
 
@@ -243,7 +257,7 @@
 
                 </div>
 
-                <div class="col-lg-6">
+                {{-- <div class="col-lg-6">
 
                     <div class="card">
                         <div class="card-body">
@@ -381,7 +395,7 @@
                         </div>
                     </div>
 
-                </div>
+                </div> --}}
             </div>
         </section>
 
